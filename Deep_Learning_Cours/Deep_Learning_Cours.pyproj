@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e5be11b8-073c-4596-858c-bcc732b1132f}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>nn5\Main.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="DataBases\data_100k.bin" />
+    <Content Include="DataBases\data_10k.bin" />
+    <Content Include="DataBases\data_1k.bin" />
+    <Content Include="DataBases\data_test10k.bin" />
+    <Content Include="DataBases\gender_100k.bin" />
+    <Content Include="DataBases\gender_10k.bin" />
+    <Content Include="DataBases\gender_1k.bin" />
+    <Content Include="DataBases\gender_test10k.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="nn1\simplest.py" />
+    <Compile Include="nn2\DataSets.py" />
+    <Compile Include="nn2\simplest_v2.py" />
+    <Compile Include="nn3\DataSets.py" />
+    <Compile Include="nn3\Main.py" />
+    <Compile Include="nn4\DataSets.py" />
+    <Compile Include="nn4\Layers.py" />
+    <Compile Include="nn4\Main.py" />
+    <Compile Include="nn5\DataSets.py" />
+    <Compile Include="nn5\Layers.py" />
+    <Compile Include="nn5\Main.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataBases" />
+    <Folder Include="nn1" />
+    <Folder Include="nn2" />
+    <Folder Include="nn3" />
+    <Folder Include="nn4" />
+    <Folder Include="nn5" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
